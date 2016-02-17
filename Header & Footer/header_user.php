@@ -21,9 +21,16 @@
 		<div class="header-limiter">
 
 			<h1><a href="#">FTC <span>Star</span></a></h1>
+            <div class="header-user-menu">
+			    <img src="assets/user.png" alt="User Image"/>
 
-			<a href="index_user.php" class="logout-button">Log-in</a>
-			<a href="#" class="logout-button">Sign-up</a>
+			    <ul>
+				    <li><a href="#">Profile</a></li>
+				    <li><a href="#">Subscriptions</a></li>
+					<li><a href="#">FTC points</a></li>
+				    <li><a href="index.php" class="highlight">Logout</a></li>
+			    </ul>
+		    </div>
 			
 		</div>
 

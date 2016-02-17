@@ -17,6 +17,13 @@
 	margin: 0;
 }
 
+.header-two-bars a2{
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 0px;
+	margin: 0;
+}
+
 .header-two-bars h1 span {
 	color: #bc40df;
 }
@@ -179,4 +186,68 @@
 	.header-two-bars .header-second-bar nav i.fa{
 		margin-left:0;
 	}
+}
+
+/* The user menu */
+
+.header-two-bars .header-limiter .header-user-menu{
+	position: relative;
+	float:right;
+	background-color:#3a3c3e;
+	width:75px;
+	height:40px;
+	border-radius:2px;
+}
+
+.header-two-bars .header-limiter .header-user-menu:before{
+	content:'';
+	width:0;
+	height:0;
+	top: 18px;
+	left: 15px;
+	position:absolute;
+	border:5px solid transparent;
+	border-top-color:#fff;
+}
+
+.header-two-bars .header-limiter .header-user-menu ul{
+	display: none;
+	font:bold 13px Arial, Helvetica, sans-serif;
+	background-color: inherit;
+	list-style: none;
+	position: absolute;
+	text-align: center;
+	width: 125px;
+	top: 25px;
+	right: 0;
+	padding: 10px;
+	border-radius: 2px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+.header-two-bars .header-user-menu:active ul,
+.header-two-bars .header-user-menu:hover ul,
+.header-two-bars .header-user-menu.show ul{
+	display:block;
+}
+
+.header-two-bars .header-user-menu ul li{
+	padding:5px;
+}
+
+.header-two-bars .header-user-menu ul li a:hover{
+	opacity:0.9;
+}
+
+.header-two-bars .header-user-menu ul li a.highlight{
+	color:#e9ac09;
+}
+
+.header-two-bars .header-user-menu img{
+	border-radius:50%;
+	position:absolute;
+	top:6px;
+	max-width: 28px;
+	right:10px;
 }
