@@ -8,6 +8,8 @@
 					<a href="#">Home</a>
 					·
 					<a href="#">Movies</a>
+					· 
+					<a href="#">Celebrities</a>
 					·   
 					<a href="#">Fan Club</a> 
 					·

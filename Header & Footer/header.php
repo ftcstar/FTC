@@ -34,6 +34,7 @@
 			<nav>
 				<a href="#"><i class="fa fa-home"></i> Home</a>
 				<a href="#"><i class="fa fa-file-movie-o"></i> Movies</a>
+				<a href="#"><i class="fa fa-smile-o"></i> Celebrities</a>
 				<a href="#"><i class="fa fa-group"></i> Fans Club</a>
 				<a href="#"><i class="fa fa-cogs"></i> Cine-career</a>
 				<a href="#"><i class="fa fa-star-half-o"></i> About us</a>
