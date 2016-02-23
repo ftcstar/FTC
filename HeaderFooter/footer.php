@@ -1,4 +1,4 @@
-<footer class="footer-distributed">
+<footer class="footer-distributed" style="margin-top: 10px;">
 
 			<div class="footer-left">
 
