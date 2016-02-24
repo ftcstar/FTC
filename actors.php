@@ -5,7 +5,6 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
     <title>About US</title>
 
@@ -27,18 +26,53 @@
   <body>
     <div class="container">
 
-      <div class="well" style="height: 1000px;"> 
-        <div class="row featurette">
+      <div class="well" style="height: 1140px;"> 
+       <?php 
+                  $movies = array();
+                  foreach (glob("./gallery/home/upcoming/*.png") as $filename) {
+                    array_push($movies, $filename);
+                  }
+
+                  $star = array();
+                  foreach (glob("./gallery/home/star/*.png") as $filename) {
+                    array_push($star, $filename);
+                  }
+
+                  $theater = array();
+                  foreach (glob("./gallery/home/theater/*.png") as $filename) {
+                    array_push($theater, $filename);
+                  }
+
+       $panels = array("Upcoming movies","Fan with Star","Movies in Theatre");
+       $upcomingMoviesArray = array("The Vampire Diaries","Gotham", "Game of Thrones", "Breaking Bad", "Friends", "The BigBang Theory");
+       $fansWithStarArray = array("Shiv With Benedict Cumberbatch", "Sachin wiht Chris Evans", "Rahul with Robert Downey Jr.", "Santu with Ryan Reynolds", "Varun with Neel Sethi");
+       $moviesInTheater = array("The Jungle Book", "Superman v Batman", "Now You See Me 2", "Deadpool", "Captain America (Civil war)", "Doctor Strange");
+       
+       for ($pIndex=0; $pIndex < 3; $pIndex++) { ?>
+        <div class="row featurette">  <!-- Start panel 1 -->
           <div class="col-md-5">
-            <h3 class="featurette-heading">Upcoming movies </h3>
+            <h3 class="featurette-heading"><?php echo  $panels[$pIndex]; ?> </h3>
             <ul>
-              <li style="display: list-item;"> The Flash </li>
-              <li>The Vampire Diaries</li>
-              <li>Gotham</li>
-              <li>Game of Thrones</li>
-              <li>Breaking Bad</li>
-              <li>Friends</li>
-              <li>The BigBang Theory</li>
+            <?php
+            // The most rubbish kind of code I ever written, i dont know why I wrote it.
+            // Please update below logic in a better way.
+
+                switch ($pIndex) {
+                  case 0:
+                  foreach ($upcomingMoviesArray as $moviesValue) {
+                    echo '<li>'.$moviesValue.'</li>';
+                  }
+                    break;
+                  case 1 :foreach ($fansWithStarArray as $starValue) {
+                    echo '<li>'.$starValue.'</li>';
+                  }
+                  break;
+                  case 2:foreach ($moviesInTheater as $theaterValue) {
+                    echo '<li>'.$theaterValue.'</li>';
+                  }
+                    break;
+                }
+            ?>
             </ul>
           </div>
           <div class="col-md-7">
@@ -55,19 +89,28 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                    <img src="gallery/home/images/img1.png" alt="Chania">
+                    <img src="<?php 
+                    if($pIndex == 0) echo $movies[0]; 
+                    else if($pIndex == 1) echo $star[0]; 
+                      else echo $theater[0];?>" >
                   </div>
 
                   <div class="item">
-                    <img src="gallery/home/images/img2.png" alt="Chania">
+                    <img src="<?php if($pIndex == 0) echo $movies[1]; 
+                    else if($pIndex == 1) echo $star[1]; 
+                      else echo $theater[1]; ?>" >
                   </div>
 
                   <div class="item">
-                    <img src="gallery/home/images/img3.png" alt="Flower">
+                    <img src="<?php if($pIndex == 0) echo $movies[2]; 
+                    else if($pIndex == 1) echo $star[2]; 
+                      else echo $theater[2]; ?>" >
                   </div>
 
                   <div class="item">
-                    <img src="gallery/home/images/img4.png" alt="Flower">
+                    <img src="<?php if($pIndex == 0) echo $movies[3]; 
+                    else if($pIndex == 1) echo $star[3]; 
+                      else echo $theater[3]; ?>" >
                   </div>
                 </div>
 
@@ -83,10 +126,9 @@
               </div>
 
           </div>
-        </div>
-
-
-
+        </div>  <!-- End Panel 1-->
+        <br/>
+        <?php } ?>
       </div>
 
     </div> <!-- /container -->
