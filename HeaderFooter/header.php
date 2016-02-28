@@ -76,13 +76,13 @@
                                 <div class="">
                                         <a href="#" class="social_box fb">
                                                 <span class="icon"><i class="fa fa-facebook"></i></span>
-                                                <span class="icon_title">Connect with Facebook</span>
+                                                <span class="icon_title">Login with Facebook</span>
 
                                         </a>
 
                                         <a href="#" class="social_box google">
                                                 <span class="icon"><i class="fa fa-google-plus"></i></span>
-                                                <span class="icon_title">Connect with Google</span>
+                                                <span class="icon_title">Login with Google</span>
                                         </a>
                                 </div>
 
