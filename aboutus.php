@@ -34,7 +34,6 @@
   </head>
 
   <?php include("HeaderFooter/header.php");?>
-  <body>
     <div class="container">
 
       <div class="well" style="height: 600px;"> 
@@ -156,7 +155,6 @@
 
    </div> <!-- /container -->
 
-</body>
 
     <script>
       $(document).ready(function(){
@@ -167,4 +165,3 @@
     </script>
 
 <?php include("HeaderFooter/footer.php"); ?>
-</html>
