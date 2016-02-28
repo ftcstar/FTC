@@ -75,18 +75,13 @@
                         <!-- Username & Password Login form -->
                         <div class="user_login">
                                 <form>
-                                        <label>Email / Username</label>
+                                        <label>Email / Phone Number</label>
                                         <input type="text" />
                                         <br />
 
                                         <label>Password</label>
                                         <input type="password" />
                                         <br />
-
-                                        <div class="checkbox">
-                                                <input id="remember" type="checkbox" />
-                                                <label for="remember">Remember me on this computer</label>
-                                        </div>
 
                                         <div class="action_btns">
                                                 <div class="one_full"><a href="#" class="btn btn_red" onclick="alert('Login successful..!')">Login</a></div>
@@ -130,6 +125,7 @@
 		$(function(){
 
 			$("#modal_trigger").click(function(){
+				$(".user_register").hide();
 				$(".user_login").show();
 				return true;
 			});
