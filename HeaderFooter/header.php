@@ -89,7 +89,7 @@
                                         </div>
 
                                         <div class="action_btns">
-                                                <div class="one_half last"><a href="#" class="btn btn_red" onclick="alert('Login successful..!')">Login</a></div>
+                                                <div class="one_full"><a href="#" class="btn btn_red" onclick="alert('Login successful..!')">Login</a></div>
                                         </div>
                                 </form>
 
@@ -115,13 +115,8 @@
                                         <input type="password" />
                                         <br />
 
-                                        <div class="checkbox">
-                                                <input id="send_updates" type="checkbox" />
-                                                <label for="send_updates">Send OTP for my email</label>
-                                        </div>
-
                                         <div class="action_btns">
-                                                <div class="one_half last"><a href="#" class="btn btn_red" onclick="alert('Registration successful..!')">Register</a></div>
+                                                <div class="one_full"><a href="#" class="btn btn_red" onclick="alert('Registration successful..!')">Register</a></div>
                                         </div>
                                 </form>
                         </div>
