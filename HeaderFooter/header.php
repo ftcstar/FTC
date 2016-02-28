@@ -26,7 +26,7 @@
 	<div class="header-first-bar">
 
 		<div class="header-limiter">
-			<h1><a href="#">FTC <span>Star</span></a></h1>
+			<h1><a href="index.php">FTC <span>Star</span></a></h1>
 		</div>
 
 	</div>
@@ -42,11 +42,11 @@
 			    </div>
 			    <div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="nav navbar-nav">
-			        <li class="active"><a href="#">Home</a></li>
+			        <li class="active"><a href="index.php">Home</a></li>
 			        <li><a href="#">Actors</a></li>
 			        <li><a href="#">Movies</a></li> 
 			        <li><a href="#">Fan Club</a></li>
-			        <li><a href="#">About US</a></li> 
+			        <li><a href="aboutus.php">About US</a></li> 
 			        <li><a href="#modal" id="modal_trigger">Login/Signup</a></li> 
 
 			      </ul>

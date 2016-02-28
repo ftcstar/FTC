@@ -5,7 +5,7 @@
 				<h3>FTC<span> Star</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="index.php">Home</a>
 					·
 					<a href="#">Movies</a>
 					· 
@@ -15,7 +15,7 @@
 					·
 					<a href="#">Cine-career</a>
 					·
-					<a href="#">About us</a>
+					<a href="aboutus.php">About us</a>
 				</p>
 
 				<p class="footer-company-name">FTC Star &copy; 2016</p>

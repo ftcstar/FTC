@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>About US</title>
+    <title>FTC Star</title>
 
     <link rel="stylesheet" href="Style/demo.css">
     <link rel="stylesheet" href="Style/header-second-bar.css">
@@ -133,4 +133,3 @@
     </div> <!-- /container -->
 
 <?php include("HeaderFooter/footer.php"); ?>
-<!-- temp branch test -->
