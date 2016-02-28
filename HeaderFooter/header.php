@@ -26,12 +26,7 @@
 	<div class="header-first-bar">
 
 		<div class="header-limiter">
-
 			<h1><a href="#">FTC <span>Star</span></a></h1>
-
-		<!--	<a href="index_user.php" class="logout-button">Log-in</a>
-			<a href="#" class="logout-button">Sign-up</a>
-		-->	
 		</div>
 
 	</div>
@@ -52,7 +47,7 @@
 			        <li><a href="#">Movies</a></li> 
 			        <li><a href="#">Fan Club</a></li>
 			        <li><a href="#">About US</a></li> 
-			        <li><a href="#modal" id="modal_trigger" onclick="" >Login/Signup</a></li> 
+			        <li><a href="#modal" id="modal_trigger">Login/Signup</a></li> 
 
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
@@ -67,35 +62,16 @@
 
 		<div id="modal" class="popupContainer" style="display:none;">
                 <header class="popupHeader">
-                        <span class="header_title">Login</span>
-                        <span class="modal_close"><i class="fa fa-times"></i></span>
+
+                        <div class="action_btns">
+                            <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
+	                        <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
+                        </div>
+
                 </header>
 
                 <section class="popupBody">
-                        <div class="social_login">
-                                <!-- <div class="">
-                                        <a href="#" class="social_box fb">
-                                                <span class="icon"><i class="fa fa-facebook"></i></span>
-                                                <span class="icon_title">Login with Facebook</span>
-
-                                        </a>
-
-                                        <a href="#" class="social_box google">
-                                                <span class="icon"><i class="fa fa-google-plus"></i></span>
-                                                <span class="icon_title">Login with Google</span>
-                                        </a>
-                                </div>
-
-                                <div class="centeredText">
-                                        <span>Or use your Email address</span>
-                                </div>
--->
-                                <div class="action_btns">
-                                        <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
-                                        <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
-                                </div>
-                        </div>
-
+                 
                         <!-- Username & Password Login form -->
                         <div class="user_login">
                                 <form>
@@ -113,7 +89,6 @@
                                         </div>
 
                                         <div class="action_btns">
-                                                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
                                                 <div class="one_half last"><a href="#" class="btn btn_red" onclick="alert('Login successful..!')">Login</a></div>
                                         </div>
                                 </form>
@@ -146,7 +121,6 @@
                                         </div>
 
                                         <div class="action_btns">
-                                                <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
                                                 <div class="one_half last"><a href="#" class="btn btn_red" onclick="alert('Registration successful..!')">Register</a></div>
                                         </div>
                                 </form>
@@ -156,30 +130,26 @@
     </header>
     <script type="text/javascript">
 
-		$("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-		
+		$("#modal_trigger").leanModal({top : 200, overlay : 0.6 });
+
 		$(function(){
+
+			$("#modal_trigger").click(function(){
+				$(".user_login").show();
+				return true;
+			});
+
 			// Calling Login Form
 			$("#login_form").click(function(){
-				$(".social_login").hide();
 				$(".user_login").show();
+				$(".user_register").hide();
 				return false;
 			});
 
 			// Calling Register Form
 			$("#register_form").click(function(){
-				$(".social_login").hide();
 				$(".user_register").show();
-				$(".header_title").text('Register');
-				return false;
-			});
-
-			// Going back to Social Forms
-			$(".back_btn").click(function(){
 				$(".user_login").hide();
-				$(".user_register").hide();
-				$(".social_login").show();
-				$(".header_title").text('Login');
 				return false;
 			});
 
