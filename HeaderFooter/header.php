@@ -89,15 +89,20 @@
                                 </form>
 
                                 <a href="#" class="forgot_password" onclick="alert('Recovary link sent to your mail..!')">Forgot password?</a>
+								<a id="sign_up" href="#" class="forgot_password">Don't have an account? Sign-up now </a>
                         </div>
 
                         <!-- Register Form -->
                         <div class="user_register">
                                 <form>
-                                        <label>Full Name</label>
+                                        <label>First Name</label>
+                                        <input type="text" />
+										<br />
+										
+										<label>Last Name</label>
                                         <input type="text" />
                                         <br />
-
+										
                                         <label>Email Address</label>
                                         <input type="email" />
                                         <br />
@@ -108,10 +113,9 @@
 
                                         <label>Password</label>
                                         <input type="password" />
-                                        <br />
-
+                                        <br />							
                                         <div class="action_btns">
-                                                <div class="one_full"><a href="#" class="btn btn_red" onclick="alert('Registration successful..!')">Register</a></div>
+                                                <div class="one_full"><a href="#" class="btn btn_red" onclick="alert('Registration successful..!')">Sign-Up</a></div>
                                         </div>
                                 </form>
                         </div>
@@ -120,7 +124,7 @@
     </header>
     <script type="text/javascript">
 
-		$("#modal_trigger").leanModal({top : 200, overlay : 0.6 });
+		$("#modal_trigger").leanModal({top : 150, overlay : 0.6 });
 
 		$(function(){
 
@@ -144,6 +148,11 @@
 				return false;
 			});
 
+			$("#sign_up").click(function(){
+				$(".user_register").show();
+				$(".user_login").hide();
+				return false;
+			});
 		})
     </script>
 </head>
