@@ -23,7 +23,11 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
     <link rel="stylesheet" href="Style/style.css">
-
+<style type="text/css">
+    .style1{
+        width: 100%;
+    }
+</style>
   </head>
   <?php include("HeaderFooter/header.php");?>
     <div class="container">
@@ -37,20 +41,17 @@
 
             <div class="col-md-7">
                 <div id="sync1" class="owl-carousel">
-                  <div class="item"><h1>1</h1></div>
-                  <div class="item"><h1>2</h1></div>
-                  <div class="item"><h1>3</h1></div> 
-                  <div class="item"><h1>4</h1></div>
-                  <div class="item"><h1>5</h1></div>
-                  <div class="item"><h1>6</h1></div>
+                  <div class="item"><img src="gallery/home/upcoming/img1.png" class="style1"></div>
+                  <div class="item"><img src="gallery/home/upcoming/img2.png" class="style1"></div>
+                  <div class="item"><img src="gallery/home/upcoming/img3.png" class="style1"></div> 
+                  <div class="item"><img src="gallery/home/upcoming/img4.png" class="style1"></div>
                 </div>
                 <div id="sync2" class="owl-carousel">
-                  <div class="item"><h1>1</h1></div>
-                  <div class="item"><h1>2</h1></div>
-                  <div class="item"><h1>3</h1></div>
-                  <div class="item"><h1>4</h1></div>
-                  <div class="item"><h1>5</h1></div>
-                  <div class="item"><h1>6</h1></div>
+                  <div class="item"><img src="gallery/home/upcoming/img1.png" class="style1"></div>
+                  <div class="item"><img src="gallery/home/upcoming/img2.png" class="style1"></div>
+                  <div class="item"><img src="gallery/home/upcoming/img3.png" class="style1"></div>
+                  <div class="item"><img src="gallery/home/upcoming/img4.png" class="style1"></div>
+
                 </div>
             </div> <!-- col-md-7 -->
             </div> <!-- row featurette -->
@@ -77,7 +78,7 @@ $(document).ready(function() {
  
   sync2.owlCarousel({
     autoPlay : true,
-    items : 15,
+    items : 4,
     itemsDesktop      : [1199,10],
     itemsDesktopSmall     : [979,10],
     itemsTablet       : [768,8],
